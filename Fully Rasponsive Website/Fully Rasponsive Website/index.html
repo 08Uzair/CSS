@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- No Follow -->
+    <meta name="robots" content="noindex">
+    <!--End No Follow -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatify | Stream Hackathon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="animated">
+        <div class="wrapper">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+            <div class="four"></div>
+        </div>
+    </div>
+    <header id="master-header">
+        <div class="container">
+            <div class="navbar grid-row">
+                <div class="branding">
+                    <a href="#" style="font-weight: 800;" class="logo"><span>Chatify</span></a>
+                </div>
+                <div class="toggle-menu align-right">
+                    <img src="d1-removebg-preview.png" alt="">
+                </div>
+                <div class="toggle-menu-close">
+                    <div class="mobile-menu-close">
+                        <img src="d1-removebg-preview.png" alt="">
+                    </div>
+                </div>
+                <nav class="navigation">
+                    <ul class="menus">
+                        <li class="menu">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="menu">
+                            <a href="#">Start Chat with a Coffee</a>
+                        </li>
+                        <li class="menu">
+                            <a href="about.html">About Us</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="sign-in align-right "><a href="#"><i class='bx bxl-youtube' ></i></a></div>
+            </div>
+        </div>
+    </header>
+    <div id="content">
+        <div class="container">
+            <div class="grid-3-1">
+                <div class="colmun">
+                    <div class="info">
+                        <h2>Chatify</h2>
+                        <h1>Easiest way to hangout👋 </h1>
+                        <div class="button-grop">
+                            <button class="blue-btn">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="colmun align-right m-sl-hide">
+                    <img class="d2" src="d2-removebg-preview.png" alt="">
+                    <img class="d1" src="d1-removebg-preview.png" alt="">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="about_chat_main_container">
+            <div class="about_chat_container">
+                <div class="about_chat_image">
+                    <img src="d3.png" alt="">
+                </div>
+                <div class="about_chat_content">
+                    <h1>Create an invite to the place where you belong</h1>
+                    <p>Discord servers are organized into topic-based channels where you can collaborate, share, and
+                        just talk about your day without clogging up a group chat.</p>
+                        <div class="button-grop">
+                            <button style="margin-left:0;" class="blue-btn">Start the Gossips Now !</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="coffee_chat_main_container">
+            <div class="coffee_chat_container">
+
+                <div class="coffee_chat_content">
+                    <h1>Missing those special days of having Coffee during gossips</h1>
+                    <p>Well! no problem it is even possible now even when you are remote, on Chatify you can have your Coffee any time during in between of your chat</p>
+                    <div class="button-grop">
+                        <button style="margin-left:0;" class="blue-btn">Try it Now !</button>
+                    </div>
+                </div>
+
+                <div class="coffee_chat_image">
+                    <img  src="th (1).jpg" class="coffee" alt="">
+                </div>
+            </div>
+            <div class="coffeeChoicesMain">
+                <div class="coffeeChoices">
+                    <ul>
+                        <li><img src="th (1).jpg" onclick="imgSlider('th (1).jpg'); changeBgColor('#099765')" alt=""></li>
+                        <li><img src="th (2).jpg" onclick="imgSlider('th (2).jpg'); changeBgColor('#a77d43')" alt=""></li>
+                        <li><img src="th.jpg" onclick="imgSlider('th.jpg'); changeBgColor('#16200d')" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer_section_avez" >
+        <div class="avez_movie_footer_container">
+            <div class="avez_movie_footer_logo">
+                    <h1>Chatify</h1>
+                    <h3>Missing someone ! then just <span>Chatify...</span> </h3>
+                    <div class="avez_movie_socials">
+                        <ul>
+                                <i class='bx bxl-facebook-circle'></i>
+                                <i class='bx bxl-linkedin-square' ></i>
+                                <i class='bx bxl-github' ></i>
+                        </ul>
+                    </div>
+            </div>
+            <div class="avez_movie_footer_desc">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis praesentium quibusdam modi maiores vero. Ab consequuntur eius sunt et illo nostrum laboriosam recusandae unde pariatur, accusantium quasi quae numquam sapiente. 
+            </div>
+        </div>
+        <div class="branding_avez_dev">
+        </div>
+    </footer>
+
+    <script>
+        function imgSlider(anything){
+            document.querySelector('.coffee').src = anything;
+        }
+        function changeBgColor(color){
+            const sec = document.querySelector('.coffee_chat_main_container');
+
+            sec.style.background = color;
+            
+        }
+    </script>
+</body>
+
+</html>
+
+<!-- ,   -->
