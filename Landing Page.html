@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        min-height: 100vh;
+        overflow-x: hidden;
+        background: linear-gradient(#2b1055, #7595);
+    }
+
+    header {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        padding: 30px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    header .logo {
+        color: #fff;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 2em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    header ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header ul li {
+        list-style: none;
+        margin-left: 20px;
+
+    }
+
+    header ul li a {
+        text-decoration: none;
+        padding: 6px 15px;
+        color: #fff;
+        border-radius: 20px;
+    }
+
+    header ul li a:hover {
+        background-color: #fff;
+        color: #2b1055;
+    }
+
+    header ul li a:hover,
+    header ul li a.active {
+        background-color: #fff;
+        color: #2b1055;
+    }
+
+    section {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        padding: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section img {
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        position: absolute;
+        top: 0;
+        object-fit: cover;
+        pointer-events: none;
+
+    }
+
+    section img #moon {
+        mix-blend-mode: screen;
+    }
+
+    section img #mountain_front {
+        z-index: 10;
+    }
+section::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#1c0522,transparent );
+    z-index: 1000;
+}
+    #text {
+        position: absolute;
+        color: #fff;
+        white-space: nowrap;
+        font-size: 7.5vw;
+        /* z-index: 9; */
+        font-weight: 700;
+    }
+
+    #btn {
+        display: inline-block;
+        text-decoration: none;
+        padding: 8px 30px;
+        border-radius: 40px;
+        background-color: #fff;
+        color: #2b1055;
+        font-size: 1.5rem;
+        z-index: 9;
+        transform: translateY(100px);
+    }
+    .sec{
+        position: relative;
+        padding: 100px;
+        background-color: #1c0522;
+        top: 49rem;
+        color: #fff;
+    }
+    .sec h2 {
+        font-size: 3.5em;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+</style>
+
+<body>
+    <header>
+
+        <a href="#" class="logo">LOGO</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="stars.png" id="stars">
+        <img src="moon.png" id="moon">
+        <img src="mountains_behind.png" id="mountains_behind">
+        <h2 id="text">Moon Light </h2>
+        <a href="#" id="btn">Explore</a>
+        <img src="mountains_front.png" id="mountains_front">
+        
+    </section>
+    <div class="sec">
+        <h2>Paralax Scrolling Effects</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, exercitationem repellat adipisci eaque
+            fugiat culpa sunt et maxime animi consectetur hic incidunt nostrum eligendi labore nam placeat perferendis
+            autem ullam! Iure neque cumque assumenda quia nobis ratione nam quibusdam quis corporis consequatur. Vel
+            consectetur aspernatur temporibus aliquam veritatis debitis accusamus omnis nihil quibusdam, sapiente earum
+            quia excepturi obcaecati illum deleniti voluptatibus odit! Optio necessitatibus, recusandae itaque fugit aut
+            nulla incidunt doloribus quam reprehenderit sequi maiores in praesentium magni voluptatibus vitae id autem
+            accusantium deserunt, dicta tempora? Laborum, cum repellendus maiores architecto numquam ratione quasi sequi
+            sit exercitationem, illo sapiente obcaecati.
+             <br><br>nulla incidunt doloribus quam reprehenderit sequi maiores in praesentium magni voluptatibus vitae id autem
+            accusantium deserunt, dicta tempora? Laborum, cum repellendus maiores architecto numquam ratione quasi sequi
+            sit exercitationem, illo sapiente obcaecati. consectetur aspernatur temporibus aliquam veritatis debitis accusamus omnis nihil quibusdam, sapiente earum
+            quia excepturi obcaecati illum deleniti voluptatibus odit! Optio necessitatibus, recusandae itaque fugit aut
+            nulla incidunt doloribus quam reprehenderit sequi maiores in praesentium magni voluptatibus vitae id autem
+            accusantium deserunt, dicta tempora? Laborum, cum repellendus maiores architecto numquam ratione quasi sequi
+            sit exercitationem, illo sapiente obcaecati.
+             <br><br> nulla incidunt doloribus quam reprehenderit sequi maiores in praesentium magni voluptatibus vitae id autem
+            accusantium deserunt, dicta tempora? Laborum, cum repellendus maiores architecto numquam ratione quasi sequi
+            sit exercitationem, illo sapiente obcaecati.consectetur aspernatur temporibus aliquam veritatis debitis accusamus omnis nihil quibusdam, sapiente earum
+            quia excepturi obcaecati illum deleniti voluptatibus odit! Optio necessitatibus, recusandae itaque fugit aut
+            nulla incidunt doloribus quam reprehenderit sequi maiores in praesentium magni voluptatibus vitae id autem
+            accusantium deserunt, dicta tempora? Laborum, cum repellendus maiores architecto numquam ratione quasi sequi
+            sit exercitationem, illo sapiente obcaecati.
+             <br><br> nulla incidunt doloribus quam reprehenderit sequi maiores in praesentium magni voluptatibus vitae id autem
+            accusantium deserunt, dicta tempora? Laborum, cum repellendus maiores architecto numquam ratione quasi sequi
+            sit exercitationem, illo sapiente obcaecati.consectetur aspernatur temporibus aliquam veritatis debitis accusamus omnis nihil quibusdam, sapiente earum
+            quia excepturi obcaecati illum deleniti voluptatibus odit! Optio necessitatibus, recusandae itaque fugit aut
+            nulla incidunt doloribus quam reprehenderit sequi maiores in praesentium magni voluptatibus vitae id autem
+            accusantium deserunt, dicta tempora? Laborum, cum repellendus maiores architecto numquam ratione quasi sequi
+            sit exercitationem, illo sapiente obcaecati.
+             <br><br> nulla incidunt doloribus quam reprehenderit sequi maiores in praesentium magni voluptatibus vitae id autem
+            accusantium deserunt, dicta tempora? Laborum, cum repellendus maiores architecto numquam ratione quasi sequi
+            sit exercitationem, illo sapiente obcaecati.consectetur aspernatur temporibus aliquam veritatis debitis accusamus omnis nihil quibusdam, sapiente earum
+            quia excepturi obcaecati illum deleniti voluptatibus odit! Optio necessitatibus, recusandae itaque fugit aut
+            nulla incidunt doloribus quam reprehenderit sequi maiores in praesentium magni voluptatibus vitae id autem
+            accusantium deserunt, dicta tempora? Laborum, cum repellendus maiores architecto numquam ratione quasi sequi
+            sit exercitationem, illo sapiente obcaecati.</p>
+    </div>
+    <script>
+        let stars=document.getElementById('stars');
+        let moon=document.getElementById('moon');
+        let mountains_behind =document.getElementById('mountains_behind ');
+        let text =document.getElementById('text');
+        let btn =document.getElementById('btn');
+        let mountains_front =document.getElementById('mountains_front')
+
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+        })
+    </script>
+</body>
+
+</html>
