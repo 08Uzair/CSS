@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USE</title>
+</head>
+<style>
+    body {
+        background-color: black;
+        color: ghostwhite;
+    }
+
+    .main {
+        /* display: flex; */
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .box {
+        width: 80%;
+        height: 70vh;
+        margin: 97px;
+        text-align: center;
+        border: 2px solid rgb(255, 255, 255);
+    }
+</style>
+
+<body>
+    <div class="main">
+        <div class="box" , id="box1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem alias dolores dolore temporibus officia
+            corporis
+            delectus nisi expedita suscipit corrupti quam, earum accusamus tempora, neque quas minima provident sapiente
+            debitis dicta. Ipsam, ut eos.
+        </div>
+    </div>
+    <script>
+        var a = document.getElementById('box1')
+        var b
+        var content = ["My name is Uzer", "My name is Avez", "My name is Uzefa", "My name is Ubaid", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+        pos = 5;
+        key = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem alias dolores dolore temporibus offici corporis"
+
+        for (let i = 1; i < 50; i++) {
+            if (i == pos) {
+                {
+                    content[i] = key;
+                }
+
+            }
+            console.log(content[i])
+        }
+        for (let i = 0; i < 50; i++) {
+            b = a.cloneNode(true);
+            a.parentNode.appendChild(b)
+            b.innerHTML = content[i]
+        }
+    </script>
+</body>
+
+</html>
